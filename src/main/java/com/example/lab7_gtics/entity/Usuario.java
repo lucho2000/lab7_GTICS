@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Date;
+import java.sql.Timestamp;
 
 @Entity
 @Table(name = "usuarios")
@@ -19,29 +20,29 @@ public class Usuario {
     @Column(name = "id", nullable = false)
     private Integer id;
 
-    @Column(name = "nombre", nullable = false)
+    @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "apellido", nullable = false)
+    @Column(name = "apellido")
     private String apellido;
 
-    @Column(name = "correo", nullable = false)
+    @Column(name = "correo")
     private String correo;
 
-    @Column(name = "username", nullable = false)
+    @Column(name = "username")
     private String username;
 
-    @Column(name = "password", nullable = false)
+    @Column(name = "password")
     private String password;
 
-    @Column(name = "estado_logico", nullable = false)
-    private String estadoLogico;
+    @Column(name = "estado_logico")
+    private String estado_logico;
 
-    @Column(name = "fecha_registro", nullable = false)
-    private Date fechaRegistro;
+    @Column(name = "fecha_registro")
+    private Timestamp fecha_registro;
 
     @ManyToOne
-    @JoinColumn(name = "rol_id")
-    private Rol rolID;
+    @JoinColumn(name = "rol_id", nullable = false)
+    private Rol rol_id;
 
 }
