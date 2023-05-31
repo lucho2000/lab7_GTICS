@@ -7,6 +7,7 @@ import lombok.Setter;
 
 import java.sql.Date;
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "usuarios")

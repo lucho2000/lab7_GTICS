@@ -2,12 +2,9 @@ package com.example.lab7_gtics.controller;
 
 
 import com.example.lab7_gtics.entity.Solicitudes;
-import com.example.lab7_gtics.entity.Usuario;
 import com.example.lab7_gtics.repository.SolicitudesRepository;
-import com.example.lab7_gtics.repository.UsuarioRepository;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.*;
